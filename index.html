@@ -33,7 +33,7 @@
                             <li class="three nav-item">
                                 <a class="nav-link" href="#contact">Contato</a>
                             </li>
-                            <hr />
+                            <hr class="d-none d-lg-block" />
                         </ul>
                     </div>
                 </div>
@@ -51,9 +51,9 @@
             <div class="container container-section">
                 <div class="col-xs-12 intro">
                     <h1 class="first-title col-xs-12">Bem-vindo!</h1>
-                    <h4 class="title-description col-xs-12">Nossa missão é trazer, performance, agilidade
+                    <p class="title-description col-xs-12 mt-5 mb-5">Nossa missão é trazer performance, agilidade
                         e qualidade em Sites Institucionais, Landing Pages e anúncios na internet!
-                    </h4>
+                    </p>
                     <p class="title-description d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing
                         elit. Consequuntur,
                         error rem, corrupti sit
@@ -68,10 +68,19 @@
                             <span class='skew bottom'></span>
                             <a>
                     </div>
+                    <div class="budget-button d-lg-none d-xs-block">
+                        <a href="#contact" class="animated-button1">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            QUERO UM ORÇAMENTO!
+                          </a>
+                      </div>
                 </div>
             </div>
         </section>
-        <section id="projects" class="section-pattern col-xs-12">
+        <section id="projects" class="section-pattern col-xs-12 d-none d-lg-block">
             <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -82,25 +91,25 @@
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="3000">
+                    <div id="institucional" class="carousel-item active" data-bs-interval="3000">
                         <img src="./assets/img/slideimg.svg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Site Institucional</h5>
-                            <p>A identidade do seu negócio na internet!</p>
+                            <p class="text-center">A identidade do seu negócio na internet!</p>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="3000">
+                    <div id="landing-page" class="carousel-item" data-bs-interval="3000">
                         <img src="./assets/img/slideimg.svg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Landing Page</h5>
-                            <p>Página única para atingir objetivos com precisão!</p>
+                            <p class="text-center">Página única para atingir objetivos com precisão!</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div id="marketing" class="carousel-item">
                         <img src="./assets/img/slideimg.svg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Marketing Digital</h5>
-                            <p>Impulsione seu negócio na internet!</p>
+                            <p class="text-center">Impulsione seu negócio na internet!</p>
                         </div>
                     </div>
                 </div>
@@ -117,19 +126,159 @@
             </div>
         </section>
         <section id="contact" class="section-pattern col-xs-12">
-            <div class="container container-section">
-                <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, expedita! Nisi illo quod quae
-                    tempora adipisci consequatur rerum, eveniet architecto quam quasi quos facere harum alias excepturi,
-                    laboriosam ducimus eaque!</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, error rem, corrupti sit
-                    placeat
-                    corporis ad ipsa distinctio, sapiente quidem exercitationem labore. Eveniet commodi tempore deserunt
-                    maiores quod non neque.</p>
+            <div class="container container-section col-lg-5">
+                <h3 class="title text-center mt-5">Entre em contato!</h3>
+                <form class="contact-form row col-lg-7 m-auto">
+                    <div class="form-field col-lg-12">
+                        <label class="label" for="name">Nome</label>
+                        <input id="name" class="input-text js-input" type="text" required>
+                    </div>
+                    <div class="form-field col-lg-12 ">
+                        <label class="label" for="email">Digite seu melhor E-mail</label>
+                        <input id="email" class="input-text js-input" type="email" required>
+                    </div>
+                    <div class="form-field col-lg-12 ">
+                        <label class="label" for="company">Nome da empresa (opcional)</label>
+                        <input id="company" class="input-text js-input" type="text" required>
+                    </div>
+                    <div class="form-field col-lg-12 ">
+                        <label class="label" for="phone">Telefone para contato (WhatsApp ou Ligação)</label>
+                        <input id="phone" class="input-text js-input" type="text" required>
+                    </div>
+                    <div class="form-field col-lg-12">
+                        <label class="label" for="message">O que você deseja?</label>
+                        <input id="message" class="input-text js-input" type="text" required>
+                    </div>
+                    <div class="sumbit-button form-field col-lg-12 text-center">
+                                               <input class="btn" type="submit" value="ENVIAR">
+                    </div>
+                </form>
             </div>
         </section>
     </main>
 
-    <footer>
+
+
+    <footer class="page-footer font-small bg-purple">
+
+        <div class="footer-row" style="background-color: #6351ce;">
+            <div class="container">
+
+
+                <div class="row py-4 d-flex align-items-center">
+                    <div class="col-md-6 col-lg-5 text-left text-md-left mb-4 mb-md-0">
+                        <!-- <h5 class="mb-0">Siga nossas redes sociais!</h5> -->
+                    </div>
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                        <!-- Facebook -->
+                        <a class="fb-ic">
+                            <i class="fab fa-facebook-f white-text mr-4"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter white-text mr-4"> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic">
+                            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram white-text"> </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5">
+
+            <!-- Grid row -->
+            <div class="row mt-3">
+
+
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 d-none d-lg-flex justify-content-center">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase font-weight-bold">HORIZON®</h5>
+                    <!-- <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;"> -->
+                    <!-- <p class="description text-justify">Here you can use rows and columns to organize your footer
+                        content. Lorem ipsum dolor sit
+                        amet,
+                        consectetur
+                        adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+                        reprehenderit perferendis eligendi illum, laborum labore sapiente minus qui soluta nesciunt
+                        itaque nulla dolore neque vero molestiae, fugit libero porro laboriosam.</p> -->
+
+                </div>
+
+
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4 work">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase font-weight-bold work-title">Trabalhos</h5>
+                    <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto d-none d-lg-flex" style="width: 100%;">
+                    <p>
+                        <a class="nav-link" href="#projects">Site Institucional</a>
+                    </p>
+                    <p>
+                        <a class="nav-link" href="#projects">Langing Page</a>
+                    </p>
+                    <p>
+                        <a class="nav-link" href="#projects">Marketing Digital</a>
+                    </p>
+                </div>
+
+                <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto d-lg-none d-xs-block" style="width: 100%;">
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase font-weight-bold">Contato</h5>
+                    <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto d-none d-lg-block" style="width: 100%;">
+                    <p class="nav-link d-flex flex-row align-items-center mail-p">
+                        <img class="mail" src="https://img.icons8.com/nolan/64/apple-mail.png" />
+                        tecnologia@softx.digital</p>
+                </div>
+
+                <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto d-lg-none d-xs-block" style="width: 100%;">
+
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 d-lg-none d-xs-block">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase font-weight-bold text-center">HORIZON®</h5>
+                    <!-- <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;"> -->
+                    <!-- <p class="description text-justify">Here you can use rows and columns to organize your footer
+                        content. Lorem ipsum dolor sit
+                        amet,
+                        consectetur
+                        adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+                        reprehenderit perferendis eligendi illum, laborum labore sapiente minus qui soluta nesciunt
+                        itaque nulla dolore neque vero molestiae, fugit libero porro laboriosam.</p> -->
+
+                </div>
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div
+            class="footer-copyright text-right py-3 nav-link d-flex flex-row align-items-center justify-content-end d-none d-lg-flex">
+            © 2022 Todos direitos reservados:
+            <a class="nav-link" href="/"> HORIZON.</a>
+        </div>
+        <!-- Copyright -->
+
 
     </footer>
 
