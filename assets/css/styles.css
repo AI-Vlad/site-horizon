@@ -65,7 +65,19 @@ p {
 
 .carousel {
     width: 100%;
+   
+    
 }
+
+
+
+.dispositives{
+    position: absolute;
+    top: 5%;
+    left: 47%;
+}
+
+
 
 .main-bg {
     background-image: url('../img/mainbg.svg');
