@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,900;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 * {
     margin: 0;
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Abel', sans-serif !important;
     font-size: 3rem !important;
 }
 
@@ -65,13 +65,13 @@ p {
 
 .carousel {
     width: 100%;
-   
-    
+
+
 }
 
 
 
-.dispositives{
+.dispositives {
     position: absolute;
     top: 5%;
     left: 47%;
@@ -376,7 +376,7 @@ li a:hover::after {
 }
 
 .animated-button1 {
-    
+
     padding: 20px 40px;
     margin: 12px;
     display: inline-block;
@@ -611,8 +611,7 @@ a.holo-btn-fed {
     font-size: 3rem;
     text-align: center;
     position: absolute;
-    bottom: 10%;
-    left: 2.5%;
+    left: 40.5%;
 
 }
 
@@ -687,9 +686,9 @@ span[class^='cta']:before {
     padding: 1rem 3rem;
     color: #f4f4f4;
     text-transform: uppercase;
-  }
-  
-  .btn {
+}
+
+.btn {
     text-decoration: none;
     border: 1px solid rgb(146, 148, 248) !important;
     position: relative;
@@ -698,31 +697,29 @@ span[class^='cta']:before {
     height: 70px;
     font-size: 2.5rem !important;
     color: #f4f4f4 !important;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
-  }
-  
-  .btn:before {
+}
+
+.btn:before {
     content: "";
     position: absolute;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-      120deg,
-      transparent,
-      rgba(146, 148, 248, 0.4),
-      transparent
-    ) !important;
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(146, 148, 248, 0.4),
+            transparent) !important;
     transition: all 650ms;
-  }
-  
-  .btn:hover:before {
+}
+
+.btn:hover:before {
     left: 100%;
-  }
+}
 
 /* CSS PARA FORMULÁRIO DE CONTATO */
 
@@ -761,7 +758,7 @@ span[class^='cta']:before {
     height: 36px;
     border-width: 0 0 2px 0;
     border-color: #FFF;
-    font-size: 18px;
+    font-size: 28px;
     line-height: 26px;
     font-weight: 400;
     background-color: transparent;
@@ -773,7 +770,7 @@ span[class^='cta']:before {
 }
 
 .contact-form .label {
-    font-size: 18px;
+    font-size: 25px;
     line-height: 26px;
     font-weight: 400;
     color: #FFF;
@@ -797,6 +794,26 @@ span[class^='cta']:before {
     width: 200px;
     cursor: pointer;
 }
+
+/* ANIMAÇÃO DA PRIMEIRA SECTION */
+
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.first-section {
+    /* This section calls the slideInFromLeft animation we defined above */
+    animation: 0.5s ease-out 0s 1 slideInFromLeft;
+    padding: 30px;
+}
+
 
 
 /* Elementos responsivos para mobile */
@@ -838,5 +855,13 @@ span[class^='cta']:before {
 
     .navbar-nav {
         margin-top: 5%;
+    }
+
+    .budget-button {
+        display: flex;
+    }
+
+    .form-container {
+        width: 90% !important;
     }
 }
