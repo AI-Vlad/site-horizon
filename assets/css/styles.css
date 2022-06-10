@@ -91,7 +91,7 @@ p {
 .bg-purple {
     background-color: #923cb5;
     background-image: linear-gradient(147deg, #000000 0%, #923cb5 94%);
-    opacity: 0.99;
+    opacity: 0.8;
 }
 
 .nav-link {
@@ -147,6 +147,10 @@ li a:hover::after {
     flex-direction: column;
 }
 
+.first-section{
+    padding-right: 4% !important;
+}
+
 .container-section {
     background: rgba(255, 255, 255, 0.03);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
@@ -159,12 +163,12 @@ li a:hover::after {
 
 .logo {
     position: absolute;
-    top: 10%;
-    opacity: 0.7;
+    top: 15%;
+    opacity: 1;
 }
 
 .logo>img {
-    width: 70%;
+    width: 85%;
 }
 
 .container-logo {
@@ -675,8 +679,8 @@ span[class^='cta']:before {
 }
 
 .holo-btn-fed .skew {
-    -o-border-image: linear-gradient(to bottom right, #99fcff 0%, #00f7ff 100%) 1;
-    border-image: linear-gradient(to bottom right, #99fcff 0%, #00f7ff 100%) 1;
+    -o-border-image: linear-gradient(to bottom right, #99fcff 100%, #00f7ff 100%) 1;
+    border-image: linear-gradient(to bottom right, #99fcff 100%, #00f7ff 100%) 1;
     -webkit-animation-name: holox-fed;
     animation-name: holox-fed;
     box-shadow: 0 0 13px rgba(17, 241, 255, 0.6) inset;
@@ -721,6 +725,15 @@ span[class^='cta']:before {
 .btn:hover:before {
     left: 100%;
 }
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.4;
+  }
 
 /* CSS PARA FORMULÁRIO DE CONTATO */
 
@@ -809,11 +822,14 @@ span[class^='cta']:before {
     }
 }
 
-.first-section {
+
+.enter-section {
     /* This section calls the slideInFromLeft animation we defined above */
     animation: 0.5s ease-out 0s 1 slideInFromLeft;
-    padding: 30px;
+   
+    
 }
+
 
 
 
@@ -871,5 +887,8 @@ span[class^='cta']:before {
         width: 90% !important;
         margin-top: 14% !important;
         margin-bottom: 5% !important;
+    }
+    .first-section{
+        padding: unset !important;
     }
 }
