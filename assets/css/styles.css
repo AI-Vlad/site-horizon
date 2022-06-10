@@ -837,9 +837,14 @@ span[class^='cta']:before {
 
     }
 
+    .first-title{
+        font-size: 4rem !important;
+    }
+
     .intro {
         display: flex;
         flex-direction: column;
+        margin-top: 18%;
     }
 
     .mail-p {
@@ -864,5 +869,7 @@ span[class^='cta']:before {
 
     .form-container {
         width: 90% !important;
+        margin-top: 14% !important;
+        margin-bottom: 5% !important;
     }
 }
