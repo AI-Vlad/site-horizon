@@ -6,8 +6,9 @@ class ValidateFormMail {
     }
 
     validate() {
-        this.sumbitButton.addEventListener('onclick', e => {
-            grecaptcha.getResponse() ? alert('deu certo') : alert('marque a caixa!')
+        this.sumbitButton.addEventListener('sumbit', e => {
+            e.preventDefault()
+            return grecaptcha.getResponse() ? alert('deu certo') : alert('marque a caixa!')
         })
     }
 }
