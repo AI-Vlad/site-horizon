@@ -214,7 +214,7 @@
                         <div class="g-recaptcha" data-sitekey="6Lel-G4gAAAAAEIDU__VmH0TsHnCJ2LSrC978zxw"></div>
                     </div>
                     <div class="sumbit-button form-field col-lg-12 text-center">
-                        <input class="btn" type="submit" value="ENVIAR">
+                        <input class="btn" value="ENVIAR" onclick="validateFormMail.validate()">
                     </div>
                 </form>
             </div>
@@ -349,7 +349,7 @@
     </script>
     <script src="./assets/js/script.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script src="./assets/js/validateFormMail.js" async defer></script>
+    <script src="./assets/js/validateFormMail.js" defer></script>
     <script>
         function onSubmit(token) {
             document.getElementById("mail-form").submit();
