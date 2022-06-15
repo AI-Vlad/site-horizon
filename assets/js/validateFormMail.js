@@ -6,7 +6,12 @@ class ValidateFormMail {
     }
 
     validate() {
-        return grecaptcha.getResponse() ? alert('deu certo') : alert('marque a caixa!')
+        return grecaptcha.getResponse() ? alert('deu certo') : this.validateError()
+    }
+
+    validateError() {
+        alert('marque a caixa!')
+        return false
     }
 }
 
